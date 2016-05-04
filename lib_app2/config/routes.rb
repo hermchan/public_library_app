@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   get "/login", to:"sessions#new"
   post "/sessions", to:"sessions#create"
+  get "/logout", to:"session#destroy"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
